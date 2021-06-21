@@ -1,0 +1,17 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: public-dependency
+  namespace: argo
+spec:
+  destination:
+    name: test
+    namespace: argo
+  project: default
+  source:
+    helm:
+      version: v3
+    path: .
+    repoURL: https://github.com/renovate-test-private-org/public-dependency.git
+    targetRevision: 1.0.0
