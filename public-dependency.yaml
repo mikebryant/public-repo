@@ -14,4 +14,4 @@ spec:
       version: v3
     path: .
     repoURL: https://github.com/renovate-test-private-org/public-dependency.git
-    targetRevision: 1.0.0
+    targetRevision: 1.0.2
